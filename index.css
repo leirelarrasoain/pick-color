@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    font-size: 25px;
+    background-image: linear-gradient(to right, #CC80DB, #6DB3F2);
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+#colorInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    gap: 5px;
+    background-color: white;
+    padding: 10px;
+}
+
+#color{
+    height: 40px;
+    padding: 5px;
+}
+
+#mode{
+    width: 50%;
+}
+button{
+    width: 35%;
+    font-size: 15px;
+    margin-right: 10px;
+}
