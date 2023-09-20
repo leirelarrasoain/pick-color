@@ -26,8 +26,8 @@ function renderColor(data){
     hexDisplay = document.getElementById("hexSelector").innerHTML
     let colorDisplay = ''
     let hexDisplay = ''
-    for (let color of color.data){
-        colrDislay +=
+    for (let color of data.color){
+        colorDisplay +=
         `<div class="schemeColor" style="background-color: ${color.hex.value}"></div>
         `
         hexDisplay +=
