@@ -22,16 +22,20 @@ function modeSelector(){
 // Add data to the Dom
 
 function renderColor(data){
-    colorDisplay = document.getElementById("colorSelection").innerHTML
-    hexDisplay = document.getElementById("hexSelector").innerHTML
-    let colorDisplay = ''
-    let hexDisplay = ''
-    for (let color of data.color){
-        colorDisplay +=
+    let colorDisplay = document.getElementById("colorSelection")
+    let hexDisplay = document.getElementById("hexSelector")
+
+    colorDisplay.innerHTML = ' ';
+    hexDisplay.innerHTML = ' ';
+
+    for (let color of data.colors){
+        colorDisplay.innerHTML +=
         `<div class="schemeColor" style="background-color: ${color.hex.value}"></div>
         `
-        hexDisplay +=
-        `<div class="schemeHex" style="background-color: ${color.hex.value}"></div>"`
+        hexDisplay.innerHTML +=
+        `<div class="schemeHex">${color.hex.value}</div>
+        `
+        
     } 
 }   
 
